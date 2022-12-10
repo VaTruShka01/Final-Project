@@ -59,7 +59,7 @@ aside a {
     }
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 500px){
         aside {
             flex-direction: column;
         }
@@ -68,5 +68,5 @@ aside a {
             width: 290px;
             padding: 0px;
         }
-
-    }
+        
+        }

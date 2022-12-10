@@ -165,7 +165,10 @@ footer p{
     }
 
     .bot-nav li a{
-        width: 100px;
+        width: 80px;
     }
 
+    .top-nav img{
+        animation: rotation 8s infinite linear;
+        }
 }
