@@ -1,0 +1,171 @@
+@import url(reset.css);
+
+/* took pizza spinning from: https://flaviocopes.com/rotate-image/ */
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
+
+/* NAV */
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav .top-nav {
+    display: flex;
+    gap: 0.5em;
+    background-color: #FFE081;
+    align-items: center;
+
+}
+
+nav .top-nav p a {
+    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+nav .top-nav img {
+    width: 100px;
+    transition: 0.5s;
+}
+
+.top-nav img:hover {
+    animation: rotation 1.8s infinite linear;
+}
+
+nav .bot-nav ul {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #FFC89F;
+
+}
+
+nav .bot-nav a {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.9em;
+    color: black;
+    font-weight: bold;
+    font-family: 'Merienda', cursive;
+    transition: 0.5s;
+}
+
+.bot-nav a:hover {
+    background-color: #f8d1b5;
+}
+
+/* HEADER */
+
+header {
+    padding-top: 150px;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Merienda', cursive;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+h1,
+h2 {
+    padding: 5px;
+}
+
+/* BODY */
+
+
+.content {
+    background-image: url(../images/istockphoto-1059262716-612x612.jpg);
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 1.6em;
+    color: rgb(245, 221, 176);
+    justify-content: space-between;
+}
+
+
+
+.my-cite {
+    font-size: 0.3em;
+    margin-bottom: 2px;
+}
+
+.my-cite a {
+    text-decoration: none;
+    color: rgb(250, 238, 216);
+}
+
+/* ASIDE */
+aside {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    width: 30%;
+    justify-content: flex-end;
+    margin: 30px;
+    padding: 15px;
+
+}
+
+aside img {
+    width: 350px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.7);
+    align-self: flex-end;
+    color: aliceblue;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE NAV*/
+
+@media screen and (max-width: 500px){
+    .top-nav p {
+        font-size: 0.8em;
+    }
+
+    .bot-nav li a{
+        width: 100px;
+    }
+
+}
