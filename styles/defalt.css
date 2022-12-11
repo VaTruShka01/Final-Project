@@ -93,6 +93,20 @@ h2 {
 /* BODY */
 
 
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    line-height: 1.2em;
+}
+
+main {
+    padding-top: 30px;
+}
+
+
 .content {
     background-image: url(../images/istockphoto-1059262716-612x612.jpg);
     background-color: rgb(0, 0, 0, 0.7);
@@ -100,7 +114,9 @@ h2 {
     flex-direction: column;
 }
 
-
+main ul img {
+    width: 35px;
+}
 
 .main-content {
     flex-grow: 1;
@@ -136,8 +152,19 @@ aside {
 
 }
 
+aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 aside img {
     width: 350px;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(250, 238, 216) ;
 }
 
 /* FOOTER */
@@ -171,4 +198,10 @@ footer p{
     .top-nav img{
         animation: rotation 8s infinite linear;
         }
+
+        header  h1, header h2{
+            font-size: 0.65em;
+        }
 }
+
+

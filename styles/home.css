@@ -1,8 +1,6 @@
 
 
-a{
-    color: rgb(245, 221, 176);
-}
+
 
 main {
     margin: 20px;
@@ -20,17 +18,13 @@ main li {
     margin-top: 10px;
 }
 
-main ul img {
-    width: 35px;
-}
+
 
 .links {
     padding-top: 70px;
 }
 
-aside a {
-    text-decoration: none;
-}
+
 
 
 
@@ -59,7 +53,7 @@ aside a {
     }
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 600px){
         aside {
             flex-direction: column;
         }
