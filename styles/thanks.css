@@ -1,0 +1,35 @@
+main {
+    height: 800px;
+    width: 100%;
+    background-image: url(../images/istockphoto-1059262716-612x612.jpg);
+}
+
+.main-content img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.main-content {
+
+    padding-top: 150px;
+    padding-left:10px ;
+    padding-right: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2em;
+}
+
+@media screen and (max-width: 660px) {
+    main {
+        height: 1100px;
+        padding: 0px;
+        text-align: justify;
+        
+    }
+
+}
