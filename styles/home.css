@@ -62,5 +62,9 @@ main li {
             width: 290px;
             padding: 0px;
         }
+
+        .links {
+            display: none;
+        }
         
         }
